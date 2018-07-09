@@ -1,8 +1,10 @@
 <?php session_start(); ?>
 <?php 
-    if(!isset($_SESSION['score']))
-        echo "ERROR: Session expired";
+	if(!isset($_SESSION['score']))
+	{
+		echo "ERROR: Session expired";
         die();
+	}
 ?>
 <html>
 <head>
